@@ -451,14 +451,6 @@ jupyter notebook cnn_exploration.ipynb
 # Run all cells sequentially
 # Results will be saved to ./results/
 ```
-
-### SageMaker Execution
-
-1. Upload `train.py` to SageMaker notebook instance
-2. Run SageMaker cells in the notebook
-3. Monitor training job in AWS Console
-4. Access deployed endpoint for inference
-
 ---
 
 ## 📈 Results Summary
@@ -468,8 +460,7 @@ jupyter notebook cnn_exploration.ipynb
 1. ✅ **Demonstrated CNN superiority over fully connected baseline** (+3-4% accuracy)
 2. ✅ **Compared 3×3 vs 5×5 kernels** (3×3 more efficient with equivalent performance)
 3. ✅ **Visualized learned features** (edge detectors, texture patterns)
-4. ✅ **Successfully deployed to SageMaker** (production-ready endpoint)
-5. ✅ **Provided theoretical justification** for architectural choices
+4. ✅ **Provided theoretical justification** for architectural choices
 
 ### Key Takeaways
 
