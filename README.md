@@ -433,35 +433,6 @@ Unordered set of (x, y, z) points
 
 ---
 
-## 🚀 SageMaker Deployment
-
-### Training on SageMaker
-
-**Instance Type:** `ml.p3.2xlarge` (GPU)  
-**Framework:** TensorFlow 2.12  
-**Training Time:** ~15 minutes for 15 epochs
-
-### Deployed Endpoint
-
-**Endpoint Name:** `fashion-mnist-cnn-endpoint`  
-**Instance Type:** `ml.m5.xlarge` (CPU for inference)  
-**Status:** Active ✅
-
-### Inference Example
-
-```python
-# Send image to endpoint
-prediction = predictor.predict(test_image)
-# Returns: {'predictions': [[prob_class_0, ..., prob_class_9]]}
-```
-
-**Sample Prediction:**
-- Input: Sneaker image (class 7)
-- Prediction: Sneaker (confidence: 98.3%)
-- Latency: ~45ms
-
----
-
 ## 🛠️ How to Run
 
 ### Prerequisites
