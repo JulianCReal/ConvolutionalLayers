@@ -433,35 +433,6 @@ Unordered set of (x, y, z) points
 
 ---
 
-## 🚀 SageMaker Deployment
-
-### Training on SageMaker
-
-**Instance Type:** `ml.p3.2xlarge` (GPU)  
-**Framework:** TensorFlow 2.12  
-**Training Time:** ~15 minutes for 15 epochs
-
-### Deployed Endpoint
-
-**Endpoint Name:** `fashion-mnist-cnn-endpoint`  
-**Instance Type:** `ml.m5.xlarge` (CPU for inference)  
-**Status:** Active ✅
-
-### Inference Example
-
-```python
-# Send image to endpoint
-prediction = predictor.predict(test_image)
-# Returns: {'predictions': [[prob_class_0, ..., prob_class_9]]}
-```
-
-**Sample Prediction:**
-- Input: Sneaker image (class 7)
-- Prediction: Sneaker (confidence: 98.3%)
-- Latency: ~45ms
-
----
-
 ## 🛠️ How to Run
 
 ### Prerequisites
@@ -480,14 +451,6 @@ jupyter notebook cnn_exploration.ipynb
 # Run all cells sequentially
 # Results will be saved to ./results/
 ```
-
-### SageMaker Execution
-
-1. Upload `train.py` to SageMaker notebook instance
-2. Run SageMaker cells in the notebook
-3. Monitor training job in AWS Console
-4. Access deployed endpoint for inference
-
 ---
 
 ## 📈 Results Summary
@@ -497,8 +460,7 @@ jupyter notebook cnn_exploration.ipynb
 1. ✅ **Demonstrated CNN superiority over fully connected baseline** (+3-4% accuracy)
 2. ✅ **Compared 3×3 vs 5×5 kernels** (3×3 more efficient with equivalent performance)
 3. ✅ **Visualized learned features** (edge detectors, texture patterns)
-4. ✅ **Successfully deployed to SageMaker** (production-ready endpoint)
-5. ✅ **Provided theoretical justification** for architectural choices
+4. ✅ **Provided theoretical justification** for architectural choices
 
 ### Key Takeaways
 
