@@ -515,7 +515,6 @@ jupyter notebook cnn_exploration.ipynb
 2. Simonyan, K., & Zisserman, A. (2014). Very deep convolutional networks for large-scale image recognition (VGG).
 3. He, K., Zhang, X., Ren, S., & Sun, J. (2016). Deep residual learning for image recognition (ResNet).
 4. Xiao, H., Rasul, K., & Vollgraf, R. (2017). Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms.
-5. Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning (MIT Press).
 
 ---
 
